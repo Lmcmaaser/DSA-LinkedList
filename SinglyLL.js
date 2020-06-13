@@ -1,7 +1,3 @@
-// Write an algorithm that will sort a given linked list. For example given a list such as 3->2->5->7->1, your program will output the sorted version of this list which will be 1->2->3->5->7. You may not use another list or any other data structure such as an array to store the data.
-
-// ok so where else can I s
-
 class _Node {
   constructor(value, next) {
     this.value = value;
@@ -103,26 +99,17 @@ class LinkedList {
   }
 }
 
-// function Main() {
-//   let sll = new LinkedList();
-//
-//   sll.insertFirst(3);
-//   sll.insertLast(2);
-//   sll.insertLast(5);
-//   sll.insertLast(7);
-//   sll.insertLast(1);
-// }
+function Main() {
+  let sll = new LinkedList();
 
-// function Sort(list) {
-//   let currNode = list.head
-//   while(currNode.next !== null) {
-//
-//   }
-// }
-
-LinkedList.prototype.addSorted = function(nodeItem) {
-  insertFirst(nodeItem) {
-    this.head = new _Node(nodeItem, this.head);
-  }
-  // I'm lost...the idea is to sort it from the start, as each node is added to the list
+  sll.insertFirst('Apollo');
+  sll.insertLast('Boomer');
+  sll.insertLast('Helo');
+  sll.insertLast('Husker');
+  sll.insertLast('Starbuck');
+  sll.insertLast('Tauhida');
+  sll.insertBefore('Boomer', 'Athena');
+  sll.insertAfter('Helo', 'Hotdog');
+  sll.insertAt('Kat', 3);
+  sll.remove('Tauhida');
 }
